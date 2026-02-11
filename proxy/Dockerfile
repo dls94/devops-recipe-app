@@ -4,7 +4,7 @@ FROM --platform=linux/amd64 nginx:stable-alpine
 # On copie notre nouveau fichier maître
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY ./default.conf.tpl /etc/nginx/default.conf.tpl
-COPY ./uwsgi_params /etc/nginx/uwsgi_params
+COPY ./gunicorn_headers /etc/nginx/gunicorn_headers
 COPY ./run.sh /run.sh
 
 ENV LISTEN_PORT=8000
