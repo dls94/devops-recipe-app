@@ -27,7 +27,7 @@ Terraform Checks:
     - docker compose run --rm -chdir=setup/ init -backend=false
     - docker compose run --rm -chdir=setup/ validate
     - docker compose run --rm -chdir=setup/ fmt -check
-    - docker compose run --rm chdir=deploy/ validate
+    - docker compose run --rm -chdir=deploy/ validate
     - docker compose run --rm -chdir=deploy/ fmt -check
 
   rules:
