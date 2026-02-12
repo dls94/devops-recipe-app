@@ -3,7 +3,7 @@ image:
   name: docker:24.0
 
 services:
-  -docker:24.0-dind
+  - docker:24.0-dind
 
 before_script:
   - echo "$DOCKERHUB_TOKEN" | docker login --username $DOCKERHUB_USER --password-stdin
